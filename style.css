@@ -636,6 +636,12 @@ section{
         height: auto;
     }
 }
+
+.clickMe{
+    padding-top: 1.5rem;
+    font-size:small;
+}
+
 .contact_container{
     width: 100%;
     &>div{
