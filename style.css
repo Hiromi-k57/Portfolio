@@ -47,6 +47,11 @@ p{
     font-size: medium;
 }
 
+.fa-circle-up.fa-pull-right,
+.fa-angles-down {
+  color: rgba(255, 255, 255, 0.44);
+}
+
 a {
     text-decoration:none; 
     color: white;
@@ -304,20 +309,21 @@ form{
     }
     .form_btn{
         width: 60%;
+        color: white;
     }
 }
 
     /* input placeholder 色を変える */
     ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-        color:  #ffffff70;
+        color:  rgba(255, 255, 255, 0.44);
         padding: 1rem;
        }
        :-ms-input-placeholder { /* Internet Explorer 10-11 */
-        color:  #ffffff70;
+        color:  rgba(255, 255, 255, 0.44);
         padding: 1rem;
        }
        ::placeholder{ /* Others */
-        color:  #ffffff70;
+        color:  rgba(255, 255, 255, 0.44);
         padding: 1rem;
        }
 
@@ -345,7 +351,7 @@ form{
     &>p{
         display: flex;
         font-size: 8px;
-        color:  #ffffff70;
+        color: rgba(255, 255, 255, 0.44);
     }
 }
 
@@ -576,7 +582,7 @@ form{
 .backToTop_position{
     &>p{
         font-size: 8px;
-        color:  #ffffff70;
+        color:  rgba(255, 255, 255, 0.44);
         }
 }    
 } /* @768 fin */
