@@ -63,12 +63,21 @@ footer{
     font-weight: 300;
     padding: 2rem 3rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-content: center;
+    text-align: center;
     & > .footer{
         font-size: smaller;
     }
 }
-
+.validCss{ 
+    margin-top: 1rem; 
+    width: 88px;
+    height: 31px;
+    border:0;
+}
+/* style="border:0;width:88px;height:31px" */
 nav{
     display: flex;
     flex-direction: row;
