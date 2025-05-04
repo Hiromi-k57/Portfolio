@@ -66,9 +66,9 @@ footer{
     justify-content: center;
     align-content: center;
     text-align: center;
-    & > .footer{
-        font-size: smaller;
-    }
+}
+footer > .footer {
+    font-size: smaller;
 }
 
 footer a {
@@ -79,14 +79,12 @@ footer a {
 
 .validCss{ 
     display: block;
-    margin-top: 0 auto; 
+    margin: 0 auto; 
     width: 88px;
     height: 31px;
     border:0;
 }
 
-
-/* style="border:0;width:88px;height:31px" */
 nav{
     display: flex;
     flex-direction: row;
@@ -95,12 +93,13 @@ nav{
     align-items: center;
     align-content: center;
     padding: 2rem 3rem;
-    .h_logo{
-        color: white;
-        font-size: medium;
-        font-weight: 800;
-        font-family: "Lexend Deca", sans-serif;
-    }
+}
+
+nav > .h_logo{
+    color: white;
+    font-size: medium;
+    font-weight: 800;
+    font-family: "Lexend Deca", sans-serif;
 }
 
 nav ul li{
@@ -134,18 +133,18 @@ section{
     align-items: center;
     justify-content: center;
     padding: 3rem ;
-    &>h1{
-        padding: 0;
-    }
-    &>p{
-        padding: 1rem 0;
-    }
-    &>img{
-        width: 1.5rem;
-        padding-top: 4rem;
-    }
 }
-
+.top_container > h1{
+    padding: 0;
+}
+.top_container > p{
+    padding: 1rem 0;
+}
+.top_container > img{
+    width: 1.5rem;
+    padding-top: 4rem;
+}
+    
 .propos_container{
     display: flex;
     flex-direction: column;
@@ -187,14 +186,14 @@ section{
     align-items: center;
     flex-wrap: wrap;
     padding: 0.5rem 1rem;
-    &>p{
-        font-size: 9px;
-        padding-bottom: 3px;
-    }
-    &>img{
-        width: 3rem;
-        height: auto;
-    }
+}
+.compétence_logo > p{
+    font-size: 9px;
+    padding-bottom: 3px;
+}
+.compétence_logo > img{
+    width: 3rem;
+    height: auto;
 }
 
 .compétence_logo_cms{
@@ -203,14 +202,14 @@ section{
     align-items: center;
     flex-wrap: wrap;
     padding: 0.5rem 1rem;
-    &>p{
-        font-size: 9px;
-        padding-bottom: 3px;
-    }
-    &>img{
-        width: 6rem;
-        height: auto;
-    }
+}
+.compétence_logo_cms > p{
+    font-size: 9px;
+    padding-bottom: 3px;
+}
+.compétence_logo_cms > img{
+    width: 6rem;
+    height: auto;
 }
 
 .compétence_logo_defi{
@@ -219,11 +218,10 @@ section{
     align-items: center;
     flex-wrap: wrap;
     padding: 0.5rem 1rem;
-
-    &>img{
-        width: 5rem;
-        height: auto;
-    }
+}
+.compétence_logo_defi > img{
+    width: 5rem;
+    height: auto;
 }
 
 .p_card_front, .p_card_back{
@@ -242,16 +240,14 @@ section{
     align-items: center;
     justify-content: center;
     padding: 0.5rem 1rem;
-   
-    & > img{
-        width: 80%;
-        height: auto;
-        
-    }
-    & >.ibox{
-        width: auto;
-        height: 70%;
-    }
+}
+.p_card_front > img{
+    width: 80%;
+    height: auto;
+}
+.p_card_front >.ibox{
+    width: auto;
+    height: 70%;
 }
 
 .p_card_front { /* 表面透かさない */
@@ -324,24 +320,25 @@ form{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    
-    &>.form, .textarea, .form_btn{
-        margin:10px 5px;
-        width: 80%;
-        height: 2rem;
-        font-family: "Lexend Deca", sans-serif;
-        font-weight: 400;
-        color: white;
-        background-color:rgba(0, 0, 0, 0.5);
-        border: none;
-        border-radius: 8px;
-        font-size: 9px;   
-    }
-    .form_btn{
-        width: 60%;
-        color: white;
-    }
+    width: 100%;   
+}
+form > .form,
+form > .textarea,
+form > .form_btn {
+    margin:10px 5px;
+    width: 80%;
+    height: 2rem;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    color: white;
+    background-color:rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 8px;
+    font-size: 9px;   
+}
+form > .form_btn{
+    width: 60%;
+    color: white;
 }
 
     /* input placeholder 色を変える */
@@ -370,22 +367,20 @@ form{
     justify-content:center;
     align-items:center;
     padding-right: 0;
-    width: 100%;
-    
-    &>a {
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 0.3rem;
-    }
-    &>p{
-        display: flex;
-        font-size: 8px;
-        color: rgba(255, 255, 255, 0.44);
-    }
+    width: 100%;  
 }
-
+.backToTop_position > a {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.3rem;
+}
+.backToTop_position > p{
+    display: flex;
+    font-size: 8px;
+    color: rgba(255, 255, 255, 0.44);
+}
 
 
 @media screen and (min-width: 500px) {
@@ -397,63 +392,61 @@ section{
 
 .top_container{    
     padding: 4rem ;
-    &>h1{
-        padding: 0;
-        font-size: 3rem;
-        }
-    &>p{
-        padding: 2rem 0;
-        font-size: 1.5rem;
-        }
-    &>img{
-        width: 2rem;
-        padding-top: 4rem;
-        }
-}
+    }
+.top_container > h1{
+    padding: 0;
+    font-size: 3rem;
+    }
+.top_container > p{
+    padding: 2rem 0;
+    font-size: 1.5rem;
+    }
+.top_container > img{
+    width: 2rem;
+    padding-top: 4rem;
+    }
 
 .propos_container, .compétence_container, .projets_container, .autres_container, .contact_container{
     padding: 1rem;
     }
-.propos_container{
-    &>h2{
-        padding-bottom: 1.5rem;
-      
+
+.propos_container > h2{
+    padding-bottom: 1.5rem;
+}
+.propos_container > p{
+    padding: 1rem 0;
+    line-height: 2rem;
     }
-    &>p{
-        padding: 1rem 0;
-        line-height: 2rem;
-        }
-    }
+
 .compétence_bg{
     height: 20rem;  
     }
 .compétence_logo{
     padding: 0.5rem 1.5rem;
-    &>p{
-        font-size: 10px;
-        padding-bottom: 3px;
-        }
-    &>img{
-        width: 4rem;
-        height: auto;
-        }
+}
+.compétence_logo > p{
+    font-size: 10px;
+    padding-bottom: 3px;
     }
-.compétence_logo_cms{
-    padding: 0.5rem 1rem;
-        &>p{
-        font-size: 10px;
-        padding-bottom: 3px;
-        }
-        &>img{
-            width: 8rem;
-            height: auto;
-        }
+.compétence_logo > img{
+    width: 4rem;
+    height: auto;
     }
 
-.compétence_logo_defi{
-    &>img{
-        width: 8rem;
-    }
+.compétence_logo_cms{
+    padding: 0.5rem 1rem;
+}
+.compétence_logo_cms > p{
+    font-size: 10px;
+    padding-bottom: 3px;
+}
+.compétence_logo_cms > img{
+    width: 8rem;
+    height: auto;
+}
+
+.compétence_logo_defi > img{
+    width: 8rem;
 }
 
 .compétence_bg_flip{
@@ -462,16 +455,16 @@ section{
 
 form{
     display: flex;
-    &>.form, .textarea, .form_btn{
-        height: 3rem;
-        font-size: 10px;
-    }
+}
+form > .form, 
+form > .textarea,
+form > .form_btn{
+    height: 3rem;
+    font-size: 10px;
 }
 
-.backToTop_position{
-    &>p{
-        font-size: 9px;
-        }
+.backToTop_position > p{
+    font-size: 9px;
     }
     
 } /* @500 fin */
@@ -495,9 +488,9 @@ p{
 
 nav{
     padding: 2rem 6rem;
-    .h_logo{
-        font-size: x-large;
-    }
+}
+nav > .h_logo{
+    font-size: x-large;
 }
 
 .language{
@@ -513,22 +506,20 @@ section{
 
 .top_container{    
     padding: 4rem ;
-    &>p{
-        padding: 2rem 0;
-    }
-    &>img{
-        width: 2.5rem;
-    }
+}
+.top_container > p{
+    padding: 2rem 0;
+}
+.top_container > img{
+    width: 2.5rem;
 }
 
-.propos_container{
-    &>h2{
-        padding-bottom: 2rem;
-    }
-    &>p{
-        padding: 1rem 0;
-        line-height: 2.5rem;
-    }
+.propos_container > h2{
+    padding-bottom: 2rem;
+}
+.propos_container > p{
+    padding: 1rem 0;
+    line-height: 2.5rem;
 }
 
 .compétence_flex{
@@ -540,11 +531,11 @@ section{
 }
 .compétence_flex_grp{
     width: 48%;
-    div{
-        margin-bottom: 0.5rem;
-        padding-bottom: 1rem;
-    }  
 }
+.compétence_flex_grp > div{
+    margin-bottom: 0.5rem;
+    padding-bottom: 1rem;
+}  
 
 .compétence_bg
 {
@@ -553,33 +544,33 @@ section{
 }
 .compétence_logo{
     padding: 0.5rem 1rem;
-    &>p{
-        font-size: 10px;
-        padding-bottom: 4px;
-    }
-    &>img{
-        width: 3rem;
-        height: auto;
-        
-    }
 }
+.compétence_logo > p{
+    font-size: 10px;
+    padding-bottom: 4px;
+}
+.compétence_logo > img{
+    width: 3rem;
+    height: auto; 
+}
+
 .compétence_logo_cms{
     padding: 0.5rem 1rem;
-    &>p{
-        font-size: 10px;
-        padding-bottom: 4px;
-    }
-    &>img{
-        width: 8rem;
-        height: auto;
-    }
+}
+.compétence_logo_cms > p{
+    font-size: 10px;
+    padding-bottom: 4px;
+}
+.compétence_logo_cms > img{
+    width: 8rem;
+    height: auto;
 }
 .compétence_logo_defi{
     padding: 0.5rem 1rem;    
-    &>img{
-        width: 7rem;
-        height: auto;
-    }
+}
+.compétence_logo_defi > img{
+    width: 7rem;
+    height: auto;
 }
 
 .projets_container, .autres_container{
@@ -596,27 +587,28 @@ section{
 
 .contact_container{
     width: 100%;
-    &>div{
-        width: 100%;
-        height: 100%;
-    }
+}
+.contact_container > div{
+    width: 100%;
+    height: 100%;
 }
 
 form{
     display: flex;
-    &>.form, .textarea, .form_btn{
-        height: 3rem;
-        font-size: 12px;
-    }
 }  
-
-.backToTop_position{
-    &>p{
-        font-size: 8px;
-        color:  rgba(255, 255, 255, 0.44);
-        }
-}    
+form > .form,
+form > .textarea,
+form > .form_btn{
+    height: 3rem;
+    font-size: 12px;
+}
+   
+.backToTop_position > p{
+    font-size: 8px;
+    color:  rgba(255, 255, 255, 0.44);
+    }
 } /* @768 fin */
+
 
 @media screen and (min-width: 960px) {
  
@@ -633,30 +625,29 @@ section{
 
 .compétence_logo{
     padding: 0.5rem 1rem;
-    &>p{
-        font-size: 14px;
-        padding-bottom: 6px;
-    }
-    &>img{
-        width: 4rem;
-        height: auto;
-        
-    }
+}
+.compétence_logo > p{
+    font-size: 14px;
+    padding-bottom: 6px;
+}
+.compétence_logo > img{
+    width: 4rem;
+    height: auto;
 }
 .compétence_logo_cms{
     padding: 0.5rem 1rem;
-    &>p{
-        font-size: 14px;
-        padding-bottom: 6px;
-    }
+}
+.compétence_logo_cms > p{
+    font-size: 14px;
+    padding-bottom: 6px;
 }
 
 .compétence_logo_defi{   
     padding: 0.5rem 1rem;    
-    &>img{
-        width: 8rem;
-        height: auto;
-    }
+}
+.compétence_logo_defi > img{
+    width: 8rem;
+    height: auto;
 }
 
 .clickMe{
@@ -666,10 +657,10 @@ section{
 
 .contact_container{
     width: 100%;
-    &>div{
-        width: 100%;
-        height: 100%;
-    }
+}
+.contact_container > div{
+    width: 100%;
+    height: 100%;
 }
 
 .contact960{
@@ -681,20 +672,22 @@ section{
 }
 form{
     display: flex;
-    
-    &>.form, .textarea, .form_btn{
-        width: 70%;
-        height: 3rem;
-        font-size: 1rem;   
-    }
-}
-.backToTop_position{
-    & > p{
-        font-size: 10px;
-        }
 }
 
+form > .form,
+form > .textarea,
+form > .form_btn{
+    width: 70%;
+    height: 3rem;
+    font-size: 1rem;   
+}
+
+.backToTop_position > p{
+    font-size: 10px;
+    }
+
 }/* @960 fin */
+
 
 @media screen and (min-width: 1200px) {
 
@@ -723,32 +716,32 @@ section{
 
 .compétence_logo{
     padding: 1rem 3rem;
-    &>p{
-    font-size: 14px;
-    padding-bottom: 10px;
-    }
-    &>img{
-        width: 4rem;
-        height: auto;
-            
-    }
+}
+.compétence_logo > p{
+font-size: 14px;
+padding-bottom: 10px;
+}
+.compétence_logo > img{
+    width: 4rem;
+    height: auto;
+
 }
 .compétence_logo_cms{
     padding: 1rem 1.5rem;
-    &>p{
-            font-size: 14px;
-            padding-bottom: 10px;
-        }
-    &>img{
-        width: 8rem;
-        height: auto;
-        }
 }
+.compétence_logo_cms > p{
+    font-size: 14px;
+    padding-bottom: 10px;
+    }
+.compétence_logo_cms > img{
+    width: 8rem;
+    height: auto;
+    }
 
 .logo_img, .p_card_img{
-        width: 100%;
-        height: 100%;
-        padding: 1rem;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
 }
 
 .p_card_front, .p_card_back{
@@ -760,21 +753,23 @@ section{
 }
 
 .compétence_logo_defi{   
-    padding: 0.5rem 1rem;    
-    &>img{
-        width: 10rem;
-        height: auto;
-    }
+    padding: 0.5rem 1rem;
+}
+.compétence_logo_defi > img{
+    width: 10rem;
+    height: auto;
 }
 
 form{
     display: flex;
     align-items: center;
     justify-content: center;
-    &>.form, .textarea, .form_btn{
-        height: 4rem;
-        font-size: 1rem;   
-    }
+}
+form > .form,
+form > .textarea,
+form > .form_btn{
+    height: 4rem;
+    font-size: 1rem;   
 }
 
 .backToTop{
@@ -790,10 +785,13 @@ form{
     align-items: center;
     padding-right: 0;
     width: 100%;
-    &>p{
-        font-size: 12px;
-        }
 }  
+.backToTop_position > p{
+    font-size: 12px;
+    }
 } /* @1200 fin */
+
+
+/* 162.textFromLeft エラー修正する */
 
 
