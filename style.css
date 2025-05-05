@@ -157,11 +157,11 @@ section{
     background-size: 200% 100%;
     background-position-x: 100%;
     transition: background-position-x 1s;
-    &.show{
-        background-position-x: 0;
-    }
 }
-
+.textFromLeft.show
+{
+    background-position-x: 0;
+}
 .propos_container, .compétence_container, .projets_container, .autres_container, .contact_container
 {
     padding: 0.5rem;
@@ -792,6 +792,5 @@ form > .form_btn{
 } /* @1200 fin */
 
 
-/* 162.textFromLeft エラー修正する */
 
 
