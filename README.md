@@ -27,7 +27,7 @@ Il est disponible en français et en japonais.
 
 ---
   
-## Caractéristiques de mise en œuvre (critères d’examen)
+## Caractéristiques de mise en œuvre
 
 - **Responsive design**
   - Plusieurs points de rupture (500px, 768px, 960px, 1200px) assurent l’adaptation aux écrans PC, tablette et mobile.
