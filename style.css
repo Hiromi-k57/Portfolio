@@ -361,7 +361,7 @@ form > .form_btn{
   margin-inline: auto;/* 親の中で水平中央 */
 }
 
-/* 任意：フォーカス/ホバーの視認性 */
+/* フォーカス/ホバーの視認性 */
 .backToTop_link:focus-visible,
 .backToTop_link:hover{
   outline:2px solid currentColor;
