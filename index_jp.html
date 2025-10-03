@@ -368,9 +368,15 @@
                 <div class="contact960">
                     <div class="compétence_bg">
                         <form action="https://formspree.io/f/xyzwkwjw" method="POST">
-                            <input type="text" placeholder="お名前" name="name" required class="form">
-                            <input type="email" placeholder="メールアドレス" name="email" required class="form">
-                            <textarea placeholder="メッセージ" name="message" required class="textarea"></textarea>
+                            <label for="name" class="sr-only">お名前</label>
+                            <input id="name" type="text" placeholder="お名前" name="name" required class="form" autocomplete="name">
+
+                            <label for="email" class="sr-only">メールアドレス</label>
+                            <input id="email" type="email" placeholder="メールアドレス" name="email" required class="form" autocomplete="email">
+
+                            <label for="message" class="sr-only">メッセージ</label>
+                            <textarea id="message" placeholder="メッセージ" name="message" required class="textarea" autocomplete="off"></textarea>
+
                             <input type="submit" value="送信" class="form_btn">
                         </form>
                     </div>
