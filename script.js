@@ -6,9 +6,9 @@ document.querySelectorAll('.flip_card').forEach(card=>{
 })
 ;
 const textFromLeft = document.querySelectorAll(".textFromLeft");
-const ovserverFromLeft = new IntersectionObserver(fromLeft,{rootMargin: "-30%"});
+const ovserverFromLeft = new IntersectionObserver(fromLeft,{rootMargin: "-30%"}); //実際に画面に入る少し前から監視を開始
 
-textFromLeft.forEach(text =>{
+textFromLeft.forEach(text =>{ //各テキストが画面に入る/出るのを監視
     ovserverFromLeft.observe(text)
 }) 
 /**
@@ -22,9 +22,9 @@ function fromLeft (entres)
     entres.forEach((entree)=>{
         
         if(entree.isIntersecting){
-            entree.target.classList.add("show")
+            entree.target.classList.add("show")//要素がビューポート内に入ったら .showクラスを追加しCSSで色が左から右に変化するのを追加
         }
-        else if(entree.rootBounds.top < entree.boundingClientRect.top){
+        else if(entree.rootBounds.top < entree.boundingClientRect.top){ //要素が画面下方向へスクロールアウトしたときは.showクラスを削除,効果をリセット
             entree.target.classList.remove("show")
         }
     })
