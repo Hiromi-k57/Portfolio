@@ -362,6 +362,8 @@ form > .form_btn{
 }
 
 /* フォーカス/ホバーの視認性 */
+.language:focus-visible,
+.language:hover, 
 .backToTop_link:focus-visible,
 .backToTop_link:hover{
   outline:2px solid currentColor;
