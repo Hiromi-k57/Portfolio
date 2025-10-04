@@ -156,14 +156,14 @@ section{
 .textFromLeft{
     background-image: linear-gradient(to right, white 50%, rgb(85, 85, 85) 50%);
     color: transparent;
-    background-clip: text;
-    background-size: 200% 100%;
-    background-position-x: 100%;
+    background-clip: text; /* 文字をマスク */
+    background-size: 200% 100%; /* 横幅2倍 高さ同じ */
+    background-position-x: 100%; /* 背景を右グレー側に寄せて配置（文字は動かない） */
     transition: background-position-x 1s;
 }
 .textFromLeft.show
 {
-    background-position-x: 0;
+    background-position-x: 0; /* 背景を左白側にスライドさせる（文字はそのまま） */
 }
 .propos_container, .compétence_container, .projets_container, .autres_container, .contact_container
 {
